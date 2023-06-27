@@ -1,0 +1,10 @@
+{
+    "zst_path": "/path/to/zst/file",
+    "chunk_size_MB": 20,
+    "required_fields": ["author","subreddit","body", "created_utc", "id", "title", "selftext", "permalink"],
+    "exclude_funcs" :
+        {
+            "author": "exclude_bot_authors",
+            "body":  "exclude_deleted"
+        }
+}
